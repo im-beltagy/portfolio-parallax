@@ -1,0 +1,172 @@
+/* === Start Font === */
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+body {
+  font-family: "Inter", serif;
+}
+
+/* === End Font === */
+
+/* === Start Portfolio === */
+
+.portfolio {
+  --bold-font: "ClashDisplay-Variable", "Inter";
+  padding-block: 5rem;
+}
+
+.protfolio__headdingTitle {
+  font-family: var(--bold-font);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  letter-spacing: -0.02em;
+}
+@media (min-width: 720px) {
+  .protfolio__headdingTitle {
+    font-size: 56px;
+  }
+}
+
+.portfolio__headdingSubtitle {
+  font-size: 18px;
+  color: #080808;
+  opacity: 0.7;
+  line-height: 1.3em;
+  letter-spacing: 0.02em;
+  max-width: 520px;
+  padding-top: 1rem;
+}
+@media (min-width: 720px) {
+  .portfolio__headdingSubtitle {
+    font-size: 22px;
+  }
+}
+
+.portfolio__cardsWrapper {
+  position: relative;
+}
+
+.portfolio__card {
+  position: sticky;
+  top: 50px;
+  height: min-content;
+  margin-block: 2rem;
+}
+
+.portfolio__cardContent {
+  min-height: 100%;
+  display: grid;
+}
+@media (min-width: 1200px) {
+  .portfolio__card {
+    height: 90vh;
+  }
+  .portfolio__cardContent {
+    grid-template-columns: 2fr 1fr;
+    place-content: center;
+  }
+}
+
+.portfolio__cardCover img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
+.portfolio__cardText {
+  padding-block: 1rem;
+  padding-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  background-color: #fff;
+}
+@media (min-width: 1200px) {
+  .portfolio__cardText {
+    padding-inline-start: 2rem;
+  }
+}
+
+.portfolio__cardHeadding {
+  flex-grow: 1;
+  display: grid;
+  gap: 0.5rem;
+  align-self: start;
+  align-content: start;
+}
+
+.portfolio__cardTitle {
+  font-family: var(--bold-font);
+  font-size: 32px;
+  font-weight: 600;
+}
+@media (min-width: 720px) {
+  .portfolio__cardTitle {
+    font-size: 40px;
+  }
+}
+
+.portfolio__cardMarked {
+  display: block;
+  width: fit-content;
+  padding-inline-end: 0.5rem;
+  font-family: var(--bold-font);
+  letter-spacing: 0.01em;
+  font-size: 20px;
+  line-height: 0.6em;
+  font-weight: 500;
+  background-color: rgb(255, 215, 31);
+}
+@media (min-width: 720px) {
+  .portfolio__cardTitle {
+    font-size: 40px;
+  }
+}
+
+.portfolio__cardSubtitle {
+  color: #080808;
+  opacity: 0.6;
+  line-height: 1.3em;
+  letter-spacing: 0.02em;
+  font-size: 18px;
+  font-weight: 600;
+}
+@media (min-width: 720px) {
+  .portfolio__cardSubtitle {
+    font-size: 16px;
+  }
+}
+
+.portfolio__cardFieldsWrapper {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.portfolio__cardFieldLabel {
+  color: #080808;
+  opacity: 0.6;
+  line-height: 1.3em;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+
+.portfolio__cardFieldContent {
+  font-family: var(--bold-font);
+  font-size: 24px;
+  font-weight: 500;
+}
+@media (min-width: 720px) {
+  .portfolio__cardFieldContent {
+    font-size: 20px;
+  }
+}
+@media (min-width: 1200px) {
+  .portfolio__cardFieldContent {
+    font-size: 24px;
+  }
+}
+
+/* === End Portfolio === */
